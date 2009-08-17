@@ -1,0 +1,13 @@
+<p>
+  <b>Forum:</b>
+  <%=h @thread.forum_id %>
+</p>
+
+<p>
+  <b>Thread:</b>
+  <%=h @thread.thread %>
+</p>
+
+
+<%= link_to 'Edit', edit_thread_path(@thread) %> |
+<%= link_to 'Back', threads_path %>

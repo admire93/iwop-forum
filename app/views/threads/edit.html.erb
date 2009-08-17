@@ -1,0 +1,20 @@
+<h1>Editing thread</h1>
+
+<% form_for(@thread) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :forum_id %><br />
+    <%= f.text_field :forum_id %>
+  </p>
+  <p>
+    <%= f.label :thread %><br />
+    <%= f.text_field :thread %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @thread %> |
+<%= link_to 'Back', threads_path %>
